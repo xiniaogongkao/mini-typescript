@@ -9,13 +9,17 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
+  import { Component, Vue } from 'vue-property-decorator'
+  import { getData } from '@/api/index'
   @Component
   export default class App extends Vue {
       // 初始化数据
       public title: string = 'hello typescript123';
       // 声明周期钩子
       mounted () {
+          getData({name: 'zhangkai'}).then(res => {
+              console.log('success');
+          })
       }  
   }
 </script>
