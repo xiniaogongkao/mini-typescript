@@ -1,24 +1,41 @@
-#### 微信小程序 TypeScript 模版
+<div align="center"><img src="https://i.loli.net/2020/09/09/Qo95yIfD2jAnYWi.png"/></div>
+<h1 align="center">微信小程序 TypeScript 模版</h1>
+<div align="center">用于创建小程序[持续更新...]</div>
 
-#### 一，安装依赖
-- 在项目根目录输入以下命令
+### 快速开始
+
+#### 克隆项目
 ```
-npm install
+$ git clone https://github.com/xiniaogongkao/MiniProgram-TypeScript.git
+```
+
+#### 开发环境
+- 需要安装[NodeJS](https://nodejs.org/en/)
+- 需要[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html)
+
+#### 安装依赖
+```bash
+# 在项目根目录输入以下命令
+$ npm install
 ```
 > 不推荐使用`cnpm`安装依赖，有报错风险
 
-#### 二，开发
-- 可使用 vs code 打开项目
-- 在根目录开启命令行并输入以下命令，开启 dev 模式
+#### 运行
+```bash
+# 在项目根目录输入
+$ npm run dev:mp-weixin
 ```
-npm run dev:mp-weixin
-```
-- 编译好的 dev 包路径为 `dist/dev/mp-weixin`，使用微信开发者工具导入此目录即可开发
+- 运行编译后，为 `dist/dev/mp-weixin` 目录
+- 使用微信开发者工具导入该目录既可开发运行
 
-#### 三，打包
-- 使用以下命令打包编译为微信小程序
-- 打包好的 release 包路径为 `dist/build/mp-weixin`
+#### 打包
+```bash
+# 在项目根目录输入
+$ npm run build:mp-weixin
 ```
-npm run build:mp-weixin
-```
+- 打包编译后，为 `dist/build/mp-weixin` 目录
 - 其余小程序平台可查看`package.json`文件
+
+---
+
+Copyright 2020 [犀鸟教育集团](https://www.xiniaogongkao.com/)
